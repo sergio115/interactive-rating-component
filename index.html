@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <main class="container">
+      <div id="mainCard" class="card">
+
+        <div class="card__star-rounded">
+          <img src="./images/icon-star.svg" alt="Star">
+        </div>
+
+        <h1 class="card__title">How did we do?</h1>
+        
+        <p class="card__description">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        
+        <div id="starsContainer" class="card__rate">
+          <div id="1" class="card__rate__option">
+            <p>1</p>
+          </div>
+          <div id="2" class="card__rate__option">
+            <p>2</p>
+          </div>
+          <div id="3" class="card__rate__option">
+            <p>3</p>
+          </div>
+          <div id="4" class="card__rate__option active">
+            <p>4</p>
+          </div>
+          <div id="5" class="card__rate__option">
+            <p>5</p>
+          </div>
+        </div>
+
+        <button id="submit" onclick="">SUBMIT</button>      
+      </div>
+
+      <div id="resultCard" class='card center-div' style="display: none;">
+        <img src="./images/illustration-thank-you.svg" alt="Thank you image">
+
+        <div class="card__result">
+          <p id="result"></p>
+        </div>
+
+        <h1 class="card__title">Thank you!</h1>
+
+        <p class="card__description">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      
+      </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sergio Eduardo Pérez Rosales</a>.
+  </footer>
+</body>
+</html>
+
+<script type="text/javascript" src="./javascript/index.js"></script>

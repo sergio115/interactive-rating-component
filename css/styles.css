@@ -1,0 +1,184 @@
+:root {
+	--primary-orange: hsl(25, 97%, 53%);
+	--neutral-white: hsl(0, 0%, 100%);
+	--neutral-light-grey: hsl(217, 12%, 63%);
+	--neutral-medium-grey: hsl(216, 12%, 54%);
+	--neutral-dark-blue: hsl(213, 19%, 18%);
+	--neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--neutral-very-dark-blue);
+}
+
+button {
+	border-radius: 25px;
+	border: 0;
+	padding: 0;
+	color: var(--neutral-white);
+	background-color: var(--primary-orange);
+	height: 48px;
+	width: 100%;
+	font-size: large;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	background-color: var(--neutral-white);
+	color: var(--primary-orange);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.card {
+	border-radius: 25px;
+	width: 70%;
+	background-image: linear-gradient(0deg,
+			hsl(213deg 29% 12%) 72%,
+			hsl(211deg 27% 16%) 93%,
+			hsl(210deg 26% 20%) 99%,
+			hsl(208deg 26% 24%) 100%,
+			hsl(206deg 26% 29%) 100%,
+			hsl(205deg 26% 33%) 100%,
+			hsl(203deg 26% 37%) 100%,
+			hsl(202deg 26% 41%) 100%,
+			hsl(200deg 26% 46%) 100%,
+			hsl(199deg 26% 50%) 100%);
+	padding: 2.5em;
+}
+
+.card__star-rounded {
+	background-color: var(--neutral-dark-blue);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 4px;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__star-rounded img {
+	height: 16px;
+	width: 16px;
+}
+
+.card__title {
+	color: var(--neutral-white);
+}
+
+.card__description {
+	font-size: 15px;
+	color: var(--neutral-light-grey);
+	margin: 0;
+}
+
+.card__rate {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.card__rate__option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--neutral-dark-blue);
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	margin: 4px;
+	padding: 2%;
+}
+
+.card__rate__option:hover {
+	cursor: pointer;
+	background-color: var(--primary-orange);
+}
+
+.card__rate__option p {
+	font-size: 15px;
+	color: var(--neutral-light-grey);
+	margin: 0;
+}
+
+.card__rate__option:hover p {
+	color: var(--neutral-white);
+}
+
+.active {
+	background-color: var(--neutral-light-grey);
+}
+
+.active p {
+	color: var(--neutral-white);
+}
+
+.center-div {
+	justify-content: center !important;
+	align-items: center !important;
+	flex-direction: column !important;
+}
+
+.center-div p {
+	text-align: center;
+}
+
+.card__result {
+	background-color: var(--neutral-dark-blue);
+	border-radius: 20px;
+	padding: .5em 1.5em;
+	margin: 2em 2em 1em 2em;
+}
+
+.card__result p {
+	color: var(--primary-orange);
+}
+
+.attribution {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: var(--neutral-white);
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 375px) {
+	.card {
+		border-radius: 25px;
+		width: 300px;
+		padding: 1em;
+	}
+}
+
+@media(min-width: 1440px) {
+	.card {
+		border-radius: 25px;
+		width: 336px;
+		padding: 2.5em;
+	}
+}
