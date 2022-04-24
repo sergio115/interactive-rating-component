@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/sergio115/interactive-rating-component)
-- Live Site URL: [Vercel](https://interactive-rating-component-5sk0usldc-sergio115.vercel.app/)
+- Live Site URL: [Vercel](https://interactive-rating-component-gilt.vercel.app/)
 
 ## My process
 
